@@ -6,9 +6,9 @@ const jwt=require("jsonwebtoken");
 const bcrypt= require("bcryptjs");
 const jwtSecret="MynameisEndtoEndYouTubeChannel$#"
 
-router.post('https://gofood-chme.onrender.com/api/creatuser', [
+router.post('/creatuser', [
   body('email').isEmail(),
-  body('name').isLength({ min: 5 }),
+  body('name').isLength({ min: 3 }),
   body('password', 'Incorrect Password').isLength({ min: 5 })]
   , async (req, res) => {
     console.log(req.body.name,
