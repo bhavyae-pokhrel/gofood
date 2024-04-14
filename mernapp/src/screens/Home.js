@@ -10,7 +10,7 @@ export default function Home() {
 
   const loadData = async () => {
     //let response = await fetch("http://localhost:5000/api/foodData", {
-     let response = await fetch("https://gofood-31co.onrender.com/api/foodData", {
+     let response = await fetch("https://gofood-u6v7.onrender.com/api/foodData", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
