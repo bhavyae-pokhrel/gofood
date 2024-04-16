@@ -9,7 +9,7 @@ export default function MyOrder() {
     const fetchMyOrder = async () => {
         console.log(localStorage.getItem('userEmail'))
         //await fetch("http://localhost:5000/api/myOrderData", {
-        await fetch("https://go-food-24rg.onrender.com/api/myOrderData", {
+        await fetch("https://gofoodapi-i32n.onrender.com/api/myOrderData", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

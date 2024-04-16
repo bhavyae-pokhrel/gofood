@@ -9,7 +9,7 @@ export default function Signup() {
     e.preventDefault();
     console.log(JSON.stringify({ name: credentials.name, email: credentials.email, password: credentials.password, location: credentials.geolocation }))
     //const response = await fetch("http://localhost:5000/api/creatuser", {
-    const response = await fetch("https://go-food-24rg.onrender.com/api/creatuser", { 
+    const response = await fetch("https://gofoodapi-i32n.onrender.com/api/creatuser", { 
       method: "POST",
       headers: {
         'Content-Type': 'application/json'
